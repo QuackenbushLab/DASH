@@ -1,0 +1,16 @@
+Sequential(
+  (0): initial_position()
+  (1): ODEBlock(
+    (odefunc): L0_MLP(
+      (output): Sequential(
+        (0): L0Dense(350 -> 100, droprate_init=0.2, lamba=1.0, temperature=10, weight_decay=0.0, local_rep=False)
+        (1): ELU(alpha=1)
+        (2): L0Dense(100 -> 100, droprate_init=0.5, lamba=1.0, temperature=10, weight_decay=0.0, local_rep=False)
+        (3): L0Dense(100 -> 350, droprate_init=0.5, lamba=1.0, temperature=10, weight_decay=0.0, local_rep=False)
+      )
+    )
+  )
+)
+.......
+lambda_l1 = 0
+lambda_pathreg = 0.0001
